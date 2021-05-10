@@ -29,7 +29,10 @@ function writeToDatabase(input: UserPost[]) {
 
 const holder = myDatabase()
 
-
+// redirect to homepage
+router.get("/", function (req: Request, res: Response) {
+  res.redirect("/fetchRecords")
+});
 
 /* GET home page. */
 router.get(
